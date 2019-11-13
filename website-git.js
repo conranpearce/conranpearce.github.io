@@ -2,7 +2,6 @@
 
 // Make image not dragable
 // Animate.css on image
-// Instagram feed
 // Video
 // Homepage - load image then scroll down to short about and links
 // Sort image by percentage
@@ -13,7 +12,13 @@
 // Image slideshow of fighting images - karate and muay thai
 // Home button same price
 // Resize first photo
-
+// About me link from homepage
+// Home page - photo on right text on left and links below
+// Photo page of my film photos?
+// Load photo in center then move to right and load text next to it
+// CV download from about page?
+// Make image clicable to about me page from homepage?
+// Lewis website text?
 
 // function start() {
 
@@ -25,7 +30,7 @@
 
 window.onload = function() {
     var element = document.getElementById("portrait");
-    element.classList.add('animated', 'fadeIn');
+    // element.classList.add('animated', 'fadeIn');
 
     // this.setTimeout(function() {
     //     window.scrollTo(0,document.body.scrollHeight);
