@@ -148,9 +148,27 @@ body {
 }
 
 
-.mySlides {
-    size: 50%;
+.column {
+    float: left;
+    width: 48%;
+    padding: 5px;
+    
 }
+  
+  /* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+#unityGame {
+    size: 50%;
+    padding:10px;
+    float: right;
+}
+
+
 
 .links {
     margin: auto;
@@ -158,13 +176,57 @@ body {
     /* padding: 10px; */
 }
 
-#aboutMe {
+.titles {
+    padding-top: 20px;
+
+}
+
+/* #aboutMe {
     padding-top: 20px;
 }
 
+#projects {
+    padding-top: 20px;
+}
+
+#martialArts {
+    padding-top: 20px;
+}
+
+#contact {
+    padding-top: 20px;
+} */
+
 .cv{
-     display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width:50;
+    opacity: 30%;
+
 }
+
+.cv:hover{
+    opacity: 100%;
+}
+
+.play-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50;
+    opacity: 40%;
+}
+
+#play {
+    padding-top: 30;
+}
+
+.play-button:hover{
+    opacity: 100%;
+}
+
+ul.list {
+    list-style-type: circle;
+  }
+  
