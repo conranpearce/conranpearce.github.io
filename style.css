@@ -102,9 +102,22 @@ body {
 .column {
     float: left;
     width: 48%;
-    padding: 5px;
+    padding: 3px;
+
+    /* width: 30%; */
+
 }
   
+#karate1 {
+    height: 50%;
+    width:auto;
+}
+#karate2 {
+    height: 50%;
+    width:auto;
+
+}
+
 .row::after {
     content: "";
     clear: both;
