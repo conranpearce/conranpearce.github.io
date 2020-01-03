@@ -1,8 +1,31 @@
 body { 
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
+@media screen and (max-width: 500px) {
+    .header a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      float: none;
+    }
+
+    .header {
+        display: none;
+    }
+
+    #karate {
+        display:none;
+    }
+
+    #unity-game{
+        display:none;
+    }
+    
+}
 
 .header {
     padding: 15px 15px;
@@ -12,24 +35,22 @@ body {
   
 .header a {
     float: left;
-    color: black;
+    color: white;
     text-align: center;
-    padding: 12px;
+    /* padding: 12px; */
     padding-right: 22px;
     padding-left: 22px;
     text-decoration: none;
     font-size: 18px; 
     border-radius: 4px;
+    opacity: 60%;
 }
-  
-.header a.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
+
   
 .header a:hover {
-    color: black;
-    padding-top: 20px;
+    color: white;
+    /* padding-top: 30px; */
+    opacity: 100%;
 } 
   
 .header a.active {
@@ -40,123 +61,73 @@ body {
 .header-right {
     float: right;
 }
-  
-@media screen and (max-width: 500px) {
-    .header a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .header-right {
-      float: none;
-    }
-}
 
-#portrait {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: auto;  
-    /* height: 70%; */
+#conranpearce {
 
-    width:50%;
-    height: auto;
+    font-family: sans-serif;
+    font-size: 30px;
+    font-size: 3.5vw;
+    /* text-align: center;
+    color: white;
+    height: 100px;
+    line-height: 100px;
+    text-align: center; */
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100%;
 }
 
 .fab {
-    padding: 20px;
+    /* padding: 20px; */
+    /* padding-top: 200px; */
     font-size: 30px;
     width: 30px;
     text-align: center;
     text-decoration: none;
     margin: 5px 2px;
+    -ms-transform:translate(-50%, 0%);
+    transform:translate(-50%, 0%);
 }
   
 .fab:hover {
-      opacity: 1;   
+    opacity: 1;   
 }
   
 .fa-linkedin {
-    color: #2867B2;
-    opacity: 0.5;
-    text-decoration: none;
-}
-  
-.fa-instagram {
-    background: #7d7d7e;
-    color: 7d7d7e;
-    opacity: 0.5;
+    /* color: #2867B2; */
+    color: white;
+    opacity: 60%;
     text-decoration: none;
 }
   
 .fa-github {
-    color: ff6600;
-    opacity: 0.5;
+    /* color: #ff6600; */
+    color: white;
+    opacity: 60%;
     text-decoration: none;
 }
 
-.fa-play {
-    color: ff6600;
-    opacity: 0.5;
-    text-decoration: none;
-}
-
-#karate1 {
-    /* height: 50%;
-    width:auto%; */
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;  
-    height:auto;
-}
-
-/* .column {
-    float: left;
-    width: 48%;
-    padding: 3px;
-
-    /* width: 30%; */
-/*
-}
-  
-#karate1 {
-    height: 50%;
-    width:auto;
-}
-#karate2 {
-    height: 50%;
-    width:auto;
-
-} 
-
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-} */
-
-#unityGame {
+#karate {
     padding:10px;
     float: right;
     width:50%;
     height: auto;
 }
 
-
-
-.links {
-    margin: auto;
-    text-align: center;
+#unity-game {
+    padding:10px;
+    float: right;
+    width:50%;
+    height: auto;
 }
 
-.titles {
-    padding-top: 20px;
+.links {
+    /* margin: auto; */
+    text-align: center;
 }
 
 .cv{
@@ -173,9 +144,27 @@ body {
     opacity: 100%;
 }
 
-#cvImg {
+#cv-img {
     width:auto;
     height:13%;
+}
+
+#link-button{
+    padding-top:10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+    opacity: 40%;
+    -ms-transform:translate(-50%, 0%);
+    transform:translate(-50%, 0%);
+
+    width:auto;
+    height:10%;
+}
+
+#link-button:hover{
+    opacity: 100%;
 }
 
 #play-button{
@@ -188,12 +177,25 @@ body {
 }
 
 #play {
-    padding-top: 10px;
+    /* padding-top: 10px; */
     width:auto;
     height:10%;
 }
 
 #play-button:hover{
+    opacity: 100%;
+}
+
+#instagram-button{
+    padding-top:10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50;
+    opacity: 40%;
+}
+
+#instagram-button:hover{
     opacity: 100%;
 }
 
@@ -228,40 +230,68 @@ li a:hover {
     background:white;
 }
 
-#aboutMeDiv {
+.panels {
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 18px;
+    padding-left:30px;
+    padding-right:30px;
+}
+
+#about-me-div {
+    /* padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    padding-left:30px;
+    padding-right:30px; */
     background:#ececec;
-    /* height:100%; */
-    padding-left:30px;
-    padding-right:30px;
+
 }
 
-#projectsDiv {
+#projects-div {
+    /* padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 18px;
-    /* height:100%; */
-    background:white;
     padding-left:30px;
-    padding-right:30px;
+    padding-right:30px; */
 }
 
-#martialArtsDiv {
+#martial-arts-div {
+    /* padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 18px;
+    padding-left:30px;
+    padding-right:30px; */
     background:#ececec;
-    /* height:100%; */
-    padding-left:30px;
-    padding-right:30px;
+
 }
 
-#contactDiv {
-    font-size: 18px;
-    /* height:100%; */
+#contact-div {
+    /* font-size: 18px;
     padding-left:30px;
     padding-right:30px;
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
 }
 
-#frontDiv {
-    /* height:100%; */
+#front-div {
     padding-left:30px;
     padding-right:30px;
+    height:100%;
+    /* background-image: url("images/__3_01203.jpg"); */
+    background-repeat:no-repeat;
+    background-size:cover;
+    /* background-size:100%; */
+}
+
+h1 {
+    display: block;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;  
+}
+
+#martialArtsTitle {
+    padding-top: 30px;
 }
