@@ -2,6 +2,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="css/style.css"> 
   <link rel="stylesheet" type="text/css" href="css/animate.css"> 
+  <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
@@ -21,12 +22,15 @@
     
     <h1>About Me</h1>
 
-    <p>I am studying <strong>Computer Science BSc (Hons)</strong> at the Univeristy of the West of England.<br>
+    <p>I am studying <strong>
+      <a class="link" href="https://courses.uwe.ac.uk/G400/computer-science/">Computer Science BSc (Hons)</a>
+      </strong> at the Univeristy of the West of England.<br>
       Within my first and second year of this degree I have acheived a 1st.<br>
       <br>Currently I am on an industrial placement year at EDF.<br>
-      Working as a Digital Developer apart of the Digital Innovation team, based in Brighton.</p>
+      Working as a Digital Developer apart of the Digital Innovation team, based in Brighton.
+    </p>
 
-      <p class="sub-header">Primary Languages:</p>
+    <p class="sub-header">Primary Languages:</p>
 
     <ul>
       <li><a>JavaScript</a></li>
@@ -37,12 +41,14 @@
     <p class="sub-header">Experience With:</p>
 
     <ul>
-      <li><a>HTML</a></li>
-      <li><a>CSS</a></li>
+      <li><a>HTML5</a></li>
+      <li><a>CSS3</a></li>
       <li><a>Node.js</a></li>
       <li><a>C</a></li>
       <li><a>C#</a></li>
+      <li><a>PHP</a></li>
       <li><a>Vue.js</a></li>
+      <li><a>CSS Pre-processors</a></li>
       <li><a>Unity</a></li>
       <li><a>Git</a></li>
       <li><a>APIs</a></li>
@@ -58,61 +64,75 @@
       <li><a>Intelligent Systems</a></li>
     </ul>
 
-    <div class="cv">
-        <a href="data.csv" download>
-          <a href="Conran_Pearce_CV.pdf" download> 
-            <img src="images/document-cv.png" alt="cv"  class="link-button">
-          </a>
-    </div>
+    <div class="larger-buttons">
+        <img src="images/document-cv.png" onclick="openCV()" alt="cv"  class="link-button">
+    </div>  
+  
   </div>
 
   <div class="panels" id="projects-div">
-    <h1>Projects</h1>
+    <section class="container">
+      <div class="left-half">
+        <h1>Projects</h1>
 
-    <p class="sub-header">Block Game:</p>
-    <p> <img src="images/unity-game.png" style="width:50%" class="img-right">This is a simple game I created using Unity and C#.<br>
-      You are able to find this project on my  <a class="link" href="https://github.com/conranpearce/Unity-Block-Game/">GitHub</a>, under Unity-Block-Game.<br>
-    </p>
-    <p class="sub-header">Instructions:</p>
-    <p>      
-      The aim of the game is to reach the end of the map without falling off the edge.<br>
-      A maximum score of 150 can be achieved.<br>
-      'A' or Left arrow buttons can be used to move the player left.<br>
-      'D' or Right arrow buttons can be used to move the player right.<br>
-      If you complete the level or fall off the map the game will reset automatically.<br>
-    </p>
+        <p class="sub-header">Block Game:</p>
 
-    <p class="sub-header" id="to-play">Press the button below to play:</p>      
+        <p>This is a simple game I created using Unity and C#.<br>
+          You are able to find this project on my Github , under <a class="link" href="https://github.com/conranpearce/Unity-Block-Game/">Unity-Block-Game</a>.<br>
+        </p>
+        <p class="sub-header">Instructions:</p>
+        <p>      
+          The aim of the game is to reach the end of the map without falling off the edge.<br>
+          A maximum score of 150 can be achieved.<br>
+          'A' or Left arrow buttons can be used to move the player left.<br>
+          'D' or Right arrow buttons can be used to move the player right.<br>
+          If you complete the level or fall off the map the game will reset automatically.<br>
 
-    <div id="play-button">
-        <a href="https://wonderful-torvalds-9e7935.netlify.com/">
-          <img src="images/play-button.png" alt="play"  class="link-button">
-        </a>
+          <br><a id="to-play">Press the button below to play:</a>
+        </p>
+
+        </div>
+      <div class="right-half">
+        <img src="images/unity-game.png" class="img-right">  
+      </div>
+    </section>
+   
+    <div class="larger-buttons">
+      <img src="images/play-button.png" onclick="openGame()" alt="play"  class="link-button">
     </div>
   </div>
 
   <div class="panels" id="martial-arts-div">
-      <h1>Martial Arts</h1>
-      <p> <img src="images/conran-karate.jpg" alt="Conran-Karate" class="img-right">Since a young age I have done various martial arts.<br>Currently I mainly train in Kyokushin Karate and Muay Thai.</p>
-      
-      <p class="sub-header">Achievements:</p>
-      <p>
-        Black Belt in Tae Kwon Do.<br>
-        Brown Belt in Kyokushin Karate.<br>
-        Representing Great Britian in the World IFK Tournament in Greece and England in Greece.
-      </p>
-      <p class="sub-header">Recent Tournaments:</p>
-      <p> 
-        1st Place British Kyokushin Open Novice 2019<br>
-        2nd Place Welsh Kyokushin Open Novice 2019<br>
-        2nd Place University Kickboxing Championships 2019
-      </p>
+    <section class="container">
+      <div class="left-half">
+        <h1>Martial Arts</h1>
 
-      <div id="instagram-button">
-        <a href="https://www.instagram.com/p/BxVF3HPHv0G/?utm_source=ig_embed&utm_campaign=loading">
-          <img src="images/instagram.png" alt="instagram"  class="link-button">
-        </a>
+        <p>Since a young age I have done various martial arts.<br>Currently I mainly train in Kyokushin Karate and Muay Thai.</p>
+
+        <p class="sub-header">Achievements:</p>
+
+        <p>
+          Black Belt in Tae Kwon Do.<br>
+          Brown Belt in Kyokushin Karate.<br>
+          Representing Great Britian in the World IFK Tournament in Greece and England in Greece.
+        </p>
+        <p class="sub-header">Recent Tournaments:</p>
+        <p> 
+          1st Place British Kyokushin Open Novice 2019<br>
+          2nd Place Welsh Kyokushin Open Novice 2019<br>
+          2nd Place University Kickboxing Championships 2019
+        </p>
+
+        </div>
+      <div class="right-half">
+        <img src="images/conran-karate.jpg" alt="Conran-Karate"  class="img-right">  
       </div>
+    </section>
+
+    <div class="larger-buttons">
+        <img src="images/instagram.png" onclick="openInstagram()" alt="instagram"  class="link-button">
+    </div>
+
   </div>
 
   <div class="panels" id="contact-div">
@@ -120,14 +140,11 @@
     <p><strong>Email: </strong>conranpearce@hotmail.com</p>
     <p><strong>Phone: </strong>+44 771864140</p>
 
-    <div id="links-bottom">
-      <a href="https://www.linkedin.com/in/conran-pearce/">
-        <img src="images/linkedin.png" alt="linkedin"  class="link-bottom-button">
-      </a>
-      <a href="https://www.github.com/conranpearce/">
-        <img src="images/github.png" alt="github"  class="link-bottom-button">
-      </a>
+    <div class="links-bottom">
+      <img src="images/linkedin.png" onclick="openLinkedin()" alt="linkedin" class="link-bottom-button">
+      <img src="images/github.png" onclick="openGithub()" alt="github" class="link-bottom-button">
     </div>
+
   </div>
 </body>
 
