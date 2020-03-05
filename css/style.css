@@ -75,11 +75,13 @@ body {
     justify-content: center; 
 }
   
-  .left-half {
+.left-half {
     flex: 1;  
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    /* text-align: center; */
 }
   
 .right-half {
@@ -99,7 +101,8 @@ body {
 }
 
 .larger-buttons {
-    padding-top:10px;
+    padding-top:20px;
+    /* padding-top:10px; */
     display: block;
 }
 
@@ -108,6 +111,13 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
 }
 
 li {
@@ -127,7 +137,8 @@ li a {
     padding-bottom: 8px;
     text-decoration: none;
     border-radius: 4px;
-    background:white;
+    /* background:white; */
+    background: #e0e0e0;
 }
   
 .panels {
@@ -138,8 +149,8 @@ li a {
     padding-right:30px;
 }
 
-#about-me-div, #martial-arts-div {
-    background:#e0e0e0;
+#about-me {
+    text-align: center;
 }
 
 #front-div {
@@ -168,7 +179,7 @@ li a {
     flex-wrap: wrap;
     height: calc(6vh);
     align-items: center;
-    width: 50%; 
+    justify-content: center;
 }
 
 .link-bottom-button{
@@ -190,6 +201,101 @@ h1 {
     font-size: 2em;
 }
 
+h2 {
+    font-size: 2.2em;
+    text-align: center;
+}
+  
+h2:after {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 60px;
+    left: 50%;
+    margin-top: 50px;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: lightblue;
+}
+  
+#contact-text {
+    text-align: center;
+}
+
+section.full-page {
+    width: 100vw;
+    max-width:100%; /* Prevents overflow */
+    height: 100vh; 
+    overflow: hidden;
+}
+
+#landing {
+    background-image: url('../images/background.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+#landing-content {
+    text-align: center;
+}
+header {
+    position: fixed;
+    width: 100%;
+    overflow: hidden;
+    transition: background-color 0.3s linear;
+    background-color: rgb(155,187,204);
+    z-index: 999;
+}
+  
+.header-nobg {
+    transition: background-color 0.3s linear;
+    background-color: transparent;
+}
+
+nav {
+    text-align: right;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+  
+  nav a {
+    display: inline-block;
+    color: #ffffff;
+    text-align: center;
+    margin-right: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 5px;
+}
+  
+nav a:last-child {
+    margin-right: 25px;
+}
+  
+nav a:hover {
+    opacity: 100%;
+} 
+  
+nav a.active {
+    color: #ffffff;
+}
+  
+nav .highlighted {
+    background-color: #ffffff;
+    color: rgb(43, 43, 43);
+    border-radius: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#contact-text a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 5px;
+}
+
 @media screen and (max-width: 500px) {
     .container {
         display: block;
@@ -208,4 +314,12 @@ h1 {
     .link-bottom-button{
         display: none;
     }
+}
+
+
+
+.content-container {
+    width: 80em;
+    max-width: 80%;
+    margin: auto;
 }
