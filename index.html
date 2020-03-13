@@ -5,8 +5,8 @@
   <meta name="description" content="Conran Pearce">
   <meta name="keywords" content="student,edf,bristol,uwe,computer,science">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css"> 
-  <link rel="stylesheet" type="text/css" href="css/animate.css"> 
   <link rel="icon" href="images/favicon.png">
   <title>Conran Pearce</title>
 </head>
@@ -26,7 +26,7 @@
 
   <section id="landing" class="full-page">
     <div class="content-container fill-container">
-      <h1 id="conranpearce">CONRAN PEARCE</h1>
+      <h1 id="landing-page">CONRAN PEARCE</h1>
     </div>
   </section>
 
@@ -37,47 +37,48 @@
     <p>I am studying <strong>
       <a class="link" href="https://courses.uwe.ac.uk/G400/computer-science/">Computer Science BSc (Hons)</a>
       </strong> at the Univeristy of the West of England.<br>
-      Within my first and second year of this degree I have acheived a 1st.<br>
+      Within my first and second year of this degree I acheived a 1st.<br>
+      Additionally I was on the Dean's List for 1st and 2nd year.<br>
       <br>Currently I am on an industrial placement year at EDF.<br>
       Working as a Digital Developer apart of the Digital Innovation team, based in Brighton.
     </p>
 
     <p class="sub-header">Primary Languages:</p>
 
-    <ul>
-      <li><a>JavaScript</a></li>
-      <li><a>Python</a></li>
-      <li><a>Java</a></li>
+    <ul class="programming-list">
+      <li class="programming-point"><a>JavaScript</a></li>
+      <li class="programming-point"><a>Python</a></li>
+      <li class="programming-point"><a>Java</a></li>
     </ul>
 
     <p class="sub-header">Experience With:</p>
 
-    <ul>
-      <li><a>HTML5</a></li>
-      <li><a>CSS3</a></li>
-      <li><a>Node.js</a></li>
-      <li><a>C</a></li>
-      <li><a>C#</a></li>
-      <li><a>PHP</a></li>
-      <li><a>Vue.js</a></li>
-      <li><a>CSS Pre-processors</a></li>
-      <li><a>Unity</a></li>
-      <li><a>Git</a></li>
-      <li><a>APIs</a></li>
+    <ul class="programming-list">
+      <li class="programming-point"><a>HTML5</a></li>
+      <li class="programming-point"><a>CSS3</a></li>
+      <li class="programming-point"><a>Node.js</a></li>
+      <li class="programming-point"><a>C</a></li>
+      <li class="programming-point"><a>C#</a></li>
+      <li class="programming-point"><a>PHP</a></li>
+      <li class="programming-point"><a>Vue.js</a></li>
+      <li class="programming-point"><a>CSS Pre-processors</a></li>
+      <li class="programming-point"><a>Unity</a></li>
+      <li class="programming-point"><a>Git</a></li>
+      <li class="programming-point"><a>APIs</a></li>
     </ul>
 
     <p class="sub-header">Modules Studied Include:</p>
 
-    <ul>
-      <li><a>Object-Oriented Systems Development</a></li>
-      <li><a>Intro to Artificial Intelligence</a></li>
-      <li><a>IoT</a></li>
-      <li><a>Design and Analysis of Data Structures and Algorithms</a></li>
-      <li><a>Intelligent Systems</a></li>
+    <ul class="programming-list">
+      <li class="programming-point"><a>Object-Oriented Systems Development</a></li>
+      <li class="programming-point"><a>Intro to Artificial Intelligence</a></li>
+      <li class="programming-point"><a>IoT</a></li>
+      <li class="programming-point"><a>Design and Analysis of Data Structures and Algorithms</a></li>
+      <li class="programming-point"><a>Intelligent Systems</a></li>
     </ul>
 
     <div class="larger-buttons">
-        <img src="images/document-cv.png" onclick="window.open('files/Conran_Pearce_CV.pdf', '_blank')" alt="cv"  class="link-button">
+      <a href='files/Conran_Pearce_CV.pdf' target='_blank' class="link-bottom-button"><img src="images/document-cv.png" alt="cv"  class="link-button"></a>
     </div>  
   
   </section>
@@ -94,16 +95,17 @@
         <p>This is a simple game I created using Unity and C#.<br>
           You are able to find this project on my Github , under <a class="link" href="https://github.com/conranpearce/Unity-Block-Game/">Unity-Block-Game</a>.<br>
         </p>
-        <p class="sub-header">Instructions:</p>
-        <p>      
-          The aim of the game is to reach the end of the map without falling off the edge.<br>
-          A maximum score of 150 can be achieved.<br>
-          'A' or Left arrow buttons can be used to move the player left.<br>
-          'D' or Right arrow buttons can be used to move the player right.<br>
-          If you complete the level or fall off the map the game will reset automatically.<br>
-          <br>
-          <a id="to-play">Press the button below to play:</a>
-        </p>
+        <p class="sub-header">Instructions:</p> 
+
+        <ul>
+          <li>The aim of the game is to reach the end of the map without falling off the edge.</li>
+          <li>A maximum score of 150 can be achieved.</li>
+          <li>'A' or Left arrow buttons can be used to move the player left.</li>
+          <li>'D' or Right arrow buttons can be used to move the player right.</li>
+          <li>If you complete the level or fall off the map the game will reset automatically.</li>
+        </ul> 
+
+        <a id="to-play">Press the button below to play:</a>
 
         </div>
       <div class="right-half">
@@ -112,7 +114,7 @@
     </section>
    
     <div class="larger-buttons">
-      <img src="images/play-button.png" onclick="window.open('https://wonderful-torvalds-9e7935.netlify.com/', '_blank')" alt="play"  class="link-button">
+      <a href='http://conran-unity-game.netlify.com/' target='_blank' class="link-bottom-button"><img src="images/play-button.png" alt="play game"  class="link-button"></a>
     </div>
   </section>
 
@@ -126,18 +128,20 @@
 
         <p class="sub-header">Achievements:</p>
 
-        <p>
-          Black Belt in Tae Kwon Do.<br>
-          Brown Belt in Kyokushin Karate.<br>
-          Representing Great Britian in the World IFK Tournament in Greece and England in Greece.
-        </p>
+        <ul>
+          <li>Black Belt in Tae Kwon Do</li>
+          <li>Brown Belt in Kyokushin Karate</li>
+          <li>Represented Great Britian in the World IFK Tournament in Greece</li>
+        </ul> 
+
         <p class="sub-header">Recent Tournaments:</p>
-        <p> 
-          1st Place Scottish Open Kyokushin 2020<br>
-          1st Place British Open Kyokushin Novice 2019<br>
-          2nd Place Welsh Open Kyokushin Novice 2019<br>
-          2nd Place University Kickboxing Championships 2019
-        </p>
+
+        <ul>
+          <li>1st Place Scottish Open Kyokushin 2020</li>
+          <li>1st Place British Open Kyokushin Novice 2019</li>
+          <li>2nd Place Welsh Open Kyokushin Novice 2019</li>
+          <li>2nd Place University Kickboxing Championships 2019</li>
+        </ul> 
 
         </div>
       <div class="right-half">
@@ -146,7 +150,7 @@
     </section>
 
     <div class="larger-buttons">
-        <img src="images/instagram.png" onclick="window.open('https://www.instagram.com/p/BxVF3HPHv0G/?utm_source=ig_embed&utm_campaign=loading', '_blank')" alt="instagram"  class="link-button">
+      <a href='https://www.instagram.com/p/BxVF3HPHv0G/' target='_blank' class="link-bottom-button"><img src="images/instagram.png" alt="instagram"  class="link-button"></a>
     </div>
 
   </section>
@@ -160,8 +164,8 @@
     </div>
 
     <div class="links-bottom">
-      <img src="images/linkedin.png" onclick="window.open('https://www.linkedin.com/in/conran-pearce/', '_blank')" alt="linkedin" class="link-bottom-button">
-      <img src="images/github.png" onclick="window.open('https://www.github.com/conranpearce/', '_blank')" alt="github" class="link-bottom-button">
+      <a href='www.linkedin.com/in/conran-pearce/' target='_blank' class="link-bottom-button"><img src="images/linkedin.png" alt="linkedin" class="link-bottom-button"></a>
+      <a href='https://www.github.com/conranpearce/' target='_blank' class="link-bottom-button"><img src="images/github.png" alt="github" class="link-bottom-button"></a>
     </div>
 
   </section>
