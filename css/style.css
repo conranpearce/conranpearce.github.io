@@ -223,6 +223,20 @@ section.full-page {
 	cursor: pointer;
 }
 
+li a {
+	display: block;
+	text-align: center;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-decoration: none;
+	border-radius: 4px;
+	background: #e0e0e0;
+}
+
+/** ABOUT ME **/
+
 .programming-list{
 	list-style-type: none;
 	margin: 0;
@@ -242,17 +256,7 @@ section.full-page {
 	padding-bottom: 4px;
 }
 
-li a {
-	display: block;
-	text-align: center;
-	padding-left: 8px;
-	padding-right: 8px;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	text-decoration: none;
-	border-radius: 4px;
-	background: #e0e0e0;
-}
+/** PROJECTS & MARTIAL ARTS **/
 
 .center-img {
 	width: 60%;
@@ -261,7 +265,6 @@ li a {
 	margin-right: auto;
 	margin-top: 20px;
 }
-
 
 .links-bottom {
 	display: flex;
@@ -278,17 +281,19 @@ li a {
 	margin-right: 15px;
 }
 
+.bullet-point-container {
+	width: 60em;
+	max-width: 60%;
+	margin: auto;
+}
+
+/** CONTACT **/
+
 #contact-text a {
 	text-decoration: none;
 	color: inherit;
 	display: block;
 	padding: 5px;
-}
-
-.bullet-point-container {
-	width: 60em;
-	max-width: 60%;
-	margin: auto;
 }
 
 /** FOOTER **/
