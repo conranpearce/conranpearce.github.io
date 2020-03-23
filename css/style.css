@@ -291,6 +291,11 @@ li a {
   
 #contact-text {
 	text-align: center;
+
+	/* -webkit-transform: translateX(-50%);
+	transform: translateX(-50%; */
+	/* left: 50%; */
+
 }
 
 .links-bottom {
@@ -313,6 +318,18 @@ li a {
 	color: inherit;
 	display: block;
 	padding: 5px;
+}
+
+/** FOOTER **/
+
+footer {
+	position: relative;
+	margin: 10px;
+	color: gray;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	text-align: center;
+	left: 50%;
 }
 
 /** OLD RESPONSIVENESS **/
@@ -437,4 +454,59 @@ li a {
   h1 {
     font-size: 3rem;
   }
+}
+
+
+
+
+
+.event-card {
+	margin-top: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-card img {
+  max-width: 100%;
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.event-card .event-card-container {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+	height: 100%;
+}
+
+.event-card .event-card-content {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0s;
+}
+.event-card:hover .event-card-content {
+  visibility: visible;
+  opacity: 1;
+	transition: visibility 0s, opacity 0.3s linear;
+}
+
+.event-card-content-box span {
+  display: block;
+	padding: 10px;	
+}
+.event-card-content-box {
+  color: #ffffff;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 20px;
+	transition: .5s ease;
+}
+
+.event-card:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+	transition: visibility 0s, opacity 0.3s linear;
 }
