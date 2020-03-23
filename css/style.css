@@ -237,6 +237,10 @@ li a {
 
 /** ABOUT ME **/
 
+#about-me p span {
+    display: block;
+}
+
 .programming-list{
 	list-style-type: none;
 	margin: 0;
