@@ -281,7 +281,7 @@ li a {
 
 .link-bottom-button{
 	opacity: 40%;
-	object-fit: contain;
+	/* object-fit: contain; */
 	height: 100%;
 	margin-right: 15px;
 }
@@ -482,34 +482,27 @@ footer {
 
 
 
-.banner_column {
-	width:7.5%;
-	/* display:inline-block; */
-	/* float:left; */
-
-	/* display: block; */
+.banner-column, .banner-column-list {
 	margin-left: auto;
 	margin-right: auto;
 	margin-top: 20px;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
 
-.banner_column a{
- /* display:inline-block; */
- display: block;
-
- /* margin:30px auto 60px auto; */
- /* width:300px;
- height:450px; */
+.banner-column {
+	width:7.5%;
 }
 
-.banner_column img {
- width:100%;
- /*don't worry about height it will auto size*/
+.banner-column-list {
+	width:12.5%;
+}
 
+.banner-column a{
+	display: block;
+}
 
- 
+.banner-column img, .banner-column-list img {
+	width:100%; 
 }
