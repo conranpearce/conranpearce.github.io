@@ -293,29 +293,36 @@ li a {
 
 /** VIDEOS **/
 
+.video-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
 .video {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-top: 20px;
+	width:70%;
 }
 
-#game-video .thevideo, #karate-video .thevideo {
+#game-video .video-file, #karate-video .video-file {
 	box-shadow: 0 0 0 0 rgba(0,0,0,0.5);
 	transition: box-shadow 0.2s linear;
 	-webkit-transition: box-shadow 0.2s linear;
     -moz-transition: box-shadow 0.2s linear;
 }
 
-#game-video .thevideo {
-	width:70%;
+#game-video .video-file {
+	width:100%;
 }
 
-#karate-video .thevideo {
-	width:35%;
+#karate-video .video-file {
+	width:40%;
 }
 
-#game-video .thevideo:hover, #karate-video .thevideo:hover {
+#game-video .video-file:hover, #karate-video .video-file:hover {
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
 	transition: box-shadow 0.2s linear;
 	-webkit-transition: box-shadow 0.2s linear;

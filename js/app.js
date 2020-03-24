@@ -23,9 +23,9 @@ var vid = $("video");
 });
 
 function hoverVideo(e) {  
-        $(this).find('.thevideo')[0].play();
+        $(this).find('.video-file')[0].play();
 }
 
 function hideVideo(e) {
-        $(this).find('.thevideo')[0].pause(); 
+        $(this).find('.video-file')[0].pause(); 
 }
