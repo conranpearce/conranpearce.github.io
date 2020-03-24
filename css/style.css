@@ -215,6 +215,21 @@ section.full-page {
 	text-decoration: underline;
 }
 
+#contact-social {
+	display:flex;
+	justify-content: center;
+}
+
+.social-link {
+	opacity: 40%;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 50px;
+}
+
+.social-link:hover {
+	opacity: 100%;
+}
 
 .larger-buttons:hover, .link-button:hover, .link-bottom-button:hover{
 	opacity: 100%;
@@ -234,6 +249,34 @@ li a {
 	text-decoration: none;
 	border-radius: 4px;
 	background: #e0e0e0;
+}
+
+/** IMAGES **/
+.image-button {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.image-button:hover {
+	opacity: 100%;
+}
+
+.image-button {
+	width:7.5%;
+	opacity: 40%;
+}
+
+
+.image-button a{
+	display: block;
+}
+
+.image-button img {
+	width:100%; 
 }
 
 /** ABOUT ME **/
@@ -344,12 +387,13 @@ li a {
 
 footer {
 	position: relative;
-	margin: 10px;
 	color: gray;
-	-webkit-transform: translateX(-50%);
-	transform: translateX(-50%);
 	text-align: center;
 	left: 50%;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 }
 
 /** OLD RESPONSIVENESS **/
@@ -474,42 +518,4 @@ footer {
   h1 {
     font-size: 3rem;
   }
-}
-
-
-
-
-
-
-
-.banner_column {
-	width:7.5%;
-	/* display:inline-block; */
-	/* float:left; */
-
-	/* display: block; */
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 20px;
-
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
-.banner_column a{
- /* display:inline-block; */
- display: block;
-
- /* margin:30px auto 60px auto; */
- /* width:300px;
- height:450px; */
-}
-
-.banner_column img {
- width:100%;
- /*don't worry about height it will auto size*/
-
-
- 
 }
