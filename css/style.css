@@ -215,6 +215,21 @@ section.full-page {
 	text-decoration: underline;
 }
 
+#contact-social {
+	display:flex;
+	justify-content: center;
+}
+
+.social-link {
+	opacity: 40%;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 50px;
+}
+
+.social-link:hover {
+	opacity: 100%;
+}
 
 .larger-buttons:hover, .link-button:hover, .link-bottom-button:hover{
 	opacity: 100%;
@@ -237,7 +252,7 @@ li a {
 }
 
 /** IMAGES **/
-.banner-column, .banner-column-list {
+.image-button {
 	margin-left: auto;
 	margin-right: auto;
 	display: flex;
@@ -246,24 +261,21 @@ li a {
 	margin-top: 20px;
 }
 
-.banner-column:hover, .banner-column-list:hover {
+.image-button:hover {
 	opacity: 100%;
 }
 
-.banner-column {
+.image-button {
 	width:7.5%;
 	opacity: 40%;
 }
 
-.banner-column-list {
-	width:12.5%;
-}
 
-.banner-column a{
+.image-button a{
 	display: block;
 }
 
-.banner-column img, .banner-column-list img {
+.image-button img {
 	width:100%; 
 }
 
