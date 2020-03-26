@@ -196,7 +196,7 @@ section.full-page {
 	opacity: 40%;
 	margin-left: 10px;
 	margin-right: 10px;
-	height: 40px;
+	height: 45px;
 }
 
 .social-link:hover {
@@ -333,12 +333,6 @@ footer {
 	transform: translateX(-50%);
 }
 
-/* Firefox  specific */
-@-moz-document url-prefix() {
-
-	
-}
-
 /** RESPONSIVENESS **/
 
 /* Very large devices (large desktops, 1920px and up) */
@@ -347,13 +341,21 @@ footer {
 		font-size: 30px;
 	}
 	
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 27.5px;
+	}
+
 	h2:after {
 		margin-top: 90px;
 		height: 2.5px;
 	}
 
 	.image-button {
-		width:70px;
+		width:80px;
+	}
+
+	.social-link {
+		height: 60px;
 	}
 }
 
@@ -362,15 +364,29 @@ footer {
 	.panels {
 		font-size: 20px;
 	} 
+
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 20px;
+	}
 	
 	h2:after {
 		margin-top: 55px;
+	}
+
+	.image-button {
+		width:60px;
+	}
+
+	.social-link {
+		height: 45px;
 	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
-	
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 20px;
+	}
 }
 
 /* Larger devices (desktops, 992px and up) */
@@ -382,13 +398,15 @@ footer {
 	nav a {
 		margin-left: 8px;
 		margin-right: 8px;
+	}
+
+	.header-nobg a, .header, nav,nav a, header {
 		font-size: 17px;
 	}
 
 	.bullet-point-container {
 		width: 100em;
 		max-width: 100%;
-		margin: auto;
 	}
 
 	.image-button {
@@ -401,29 +419,6 @@ footer {
 	h1 {
     	font-size: 4rem;
 	}	
-	  
-	/* nav a {
-		font-size: 16px;
-		margin-left: 3px;
-		margin-right: 3px;
-		padding-left: 3px;
-		padding-right: 3px;
-	} */
-
-	/* nav a:last-child {
-		margin-right: 15px;
-	}
-
-	nav .highlighted {
-		padding-left: 5px;
-		padding-right: 5px;
-	}
-
-  	.bullet-point-container {
-		width: 100em;
-		max-width: 100%;
-		margin: auto;
-	} */
 }
 
 @media (max-width: 600px) {
@@ -433,11 +428,7 @@ footer {
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
 
-	.header-nobg a, .header, nav {
-		visibility: visible;
-	}
-
-	nav a {
+	.header-nobg a, .header, nav,nav a, header {
 		font-size: 15px;
 	}
 
@@ -452,7 +443,6 @@ footer {
 	.bullet-point-container {
 		width: 100em;
 		max-width: 100%;
-		margin: auto;
 	}
 }
 
@@ -477,13 +467,24 @@ footer {
 		font-size: 13px;
 	}
 
+	.content-container {
+		max-width: 95%;
+	}
+
 	.bullet-point-container {
 		width: 100em;
 		max-width: 100%;
-		margin: auto;
 	}
 	
 	.video-container {
 		display: none;
+	}
+}
+
+/* Tiny devices, such as iPhone SE (portrait phones, 320px and up) */
+@media (max-width: 320px) {
+
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 11px;
 	}
 }
