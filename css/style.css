@@ -196,7 +196,7 @@ section.full-page {
 	opacity: 40%;
 	margin-left: 10px;
 	margin-right: 10px;
-	height: 50px;
+	height: 45px;
 }
 
 .social-link:hover {
@@ -223,17 +223,13 @@ li a {
 	align-items: center;
 	justify-content: center;
 	margin-top: 20px;
+	opacity: 40%;
+	width:50px;
 }
 
 .image-button:hover {
 	opacity: 100%;
 }
-
-.image-button {
-	width:7.5%;
-	opacity: 40%;
-}
-
 
 .image-button a{
 	display: block;
@@ -337,94 +333,117 @@ footer {
 	transform: translateX(-50%);
 }
 
-/** OLD RESPONSIVENESS **/
+/** RESPONSIVENESS **/
 
-@media screen and (max-width: 500px) {
-	.container {
-		display: block;
+/* Very large devices (large desktops, 1920px and up) */
+@media (max-width: 1920px) {
+	.panels {
+		font-size: 30px;
 	}
-	.header {
-		display: none;
-		visibility: hidden;
-	}
-}
-
-/* Firefox  specific */
-@-moz-document url-prefix() {
-
 	
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 27.5px;
+	}
+
+	h2:after {
+		margin-top: 90px;
+		height: 2.5px;
+	}
+
+	.image-button {
+		width:80px;
+	}
+
+	.social-link {
+		height: 60px;
+	}
 }
 
-/** NEW RESPONSIVENESS **/
+/* Extra large devices (large desktops, 1366px and up) */
+@media (max-width: 1366px) {
+	.panels {
+		font-size: 20px;
+	} 
 
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 20px;
+	}
+	
+	h2:after {
+		margin-top: 55px;
+	}
 
-/* Extra large devices (large desktops, 1200px and up) */
+	.image-button {
+		width:60px;
+	}
+
+	.social-link {
+		height: 45px;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 20px;
+	}
 }
 
-/* Large devices (desktops, 992px and up) */
+/* Larger devices (desktops, 992px and up) */
 @media (max-width: 992px) {
-  nav a {
-    margin-left: 8px;
-    margin-right: 8px;
-    font-size: 17px;
-  }
-  
+	.panels {
+		font-size: 15px;
+	} 
+	
+	nav a {
+		margin-left: 8px;
+		margin-right: 8px;
+	}
+
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 17px;
+	}
+
+	.bullet-point-container {
+		width: 100em;
+		max-width: 100%;
+	}
+
+	.image-button {
+		width:50px;
+	}
 }
 
 /* Medium devices (tablets, 768px and up) */
 @media (max-width: 768px) {
-  nav a {
-    font-size: 16px;
-    margin-left: 3px;
-    margin-right: 3px;
-    padding-left: 3px;
-    padding-right: 3px;
-  }
-
-  nav a:last-child {
-    margin-right: 15px;
-  }
-
-  nav .highlighted {
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-
-  .content-container {
-    max-width: 85%;
-  }
-
-  h1 {
-    font-size: 4rem;
-  }
-
-}
-
-@media (max-height: 768px) {
-
+	h1 {
+    	font-size: 4rem;
+	}	
 }
 
 @media (max-width: 600px) {
-  .header-nobg a, .header, nav {
-    display: none;
-    visibility: hidden;
-  }
+
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-  nav a {
-    font-size: 15px;
-  }
 
-  .content-container {
-    max-width: 90%;
-  }
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 15px;
+	}
 
-  h1 {
-    font-size: 3.5rem;
-  }
+	.content-container {
+		max-width: 90%;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	.bullet-point-container {
+		width: 100em;
+		max-width: 100%;
+	}
 }
 
 @media (max-height: 576px) {
@@ -436,17 +455,36 @@ footer {
 /* Tiny devices (portrait phones, 450px and up) */
 @media (max-width: 450px) {
 
-  nav a {
-    font-size: 14px;
-  }
+	.container {
+		display: block;
+	}
 
-  h1 {
-    font-size: 3rem;
-  }
+  	h1 {
+    	font-size: 3rem;
+	}
+
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 13px;
+	}
+
+	.content-container {
+		max-width: 95%;
+	}
+
+	.bullet-point-container {
+		width: 100em;
+		max-width: 100%;
+	}
+	
+	.video-container {
+		display: none;
+	}
 }
 
-@media (max-height: 450px) {
-  h1 {
-    font-size: 3rem;
-  }
+/* Tiny devices, such as iPhone SE (portrait phones, 320px and up) */
+@media (max-width: 320px) {
+
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 11px;
+	}
 }
