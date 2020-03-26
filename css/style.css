@@ -196,7 +196,7 @@ section.full-page {
 	opacity: 40%;
 	margin-left: 10px;
 	margin-right: 10px;
-	height: 50px;
+	height: 40px;
 }
 
 .social-link:hover {
@@ -223,16 +223,21 @@ li a {
 	align-items: center;
 	justify-content: center;
 	margin-top: 20px;
+	opacity: 40%;
+	/* width:7.5%; */
+	width:50px;
 }
 
 .image-button:hover {
 	opacity: 100%;
 }
 
-.image-button {
+/* .image-button {
 	width:7.5%;
 	opacity: 40%;
-}
+
+	
+} */
 
 
 .image-button a{
@@ -337,18 +342,6 @@ footer {
 	transform: translateX(-50%);
 }
 
-/** OLD RESPONSIVENESS **/
-
-@media screen and (max-width: 500px) {
-	.container {
-		display: block;
-	}
-	.header {
-		display: none;
-		visibility: hidden;
-	}
-}
-
 /* Firefox  specific */
 @-moz-document url-prefix() {
 
@@ -407,24 +400,35 @@ footer {
 
 @media (max-width: 600px) {
   .header-nobg a, .header, nav {
-    display: none;
+    /* display: none; */
     visibility: hidden;
   }
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-  nav a {
-    font-size: 15px;
-  }
 
-  .content-container {
-    max-width: 90%;
-  }
+	.header-nobg a, .header, nav {
+		visibility: visible;
+	}
 
-  h1 {
-    font-size: 3.5rem;
-  }
+	nav a {
+		font-size: 15px;
+	}
+
+	.content-container {
+		max-width: 90%;
+	}
+
+	h1 {
+		font-size: 3.5rem;
+	}
+
+	.bullet-point-container {
+		width: 100em;
+		max-width: 100%;
+		margin: auto;
+	}
 }
 
 @media (max-height: 576px) {
@@ -436,17 +440,25 @@ footer {
 /* Tiny devices (portrait phones, 450px and up) */
 @media (max-width: 450px) {
 
-  nav a {
-    font-size: 14px;
-  }
+	.container {
+		display: block;
+	}
 
-  h1 {
-    font-size: 3rem;
-  }
-}
+  	h1 {
+    	font-size: 3rem;
+	}
 
-@media (max-height: 450px) {
-  h1 {
-    font-size: 3rem;
-  }
+	.header-nobg a, .header, nav,nav a, header {
+		font-size: 12px;
+	}
+
+	.bullet-point-container {
+		width: 100em;
+		max-width: 100%;
+		margin: auto;
+	}
+	
+	.video-container {
+		display: none;
+	}
 }
