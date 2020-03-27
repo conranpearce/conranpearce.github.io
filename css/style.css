@@ -163,13 +163,13 @@ section.full-page {
 .panels {
 	padding-top: 20px;
 	padding-bottom: 20px;
-	font-size: 18px;
+	font-size: 15px;
 	padding-left:30px;
 	padding-right:30px;
 }
 
 .container {
-	font-size: 18px;
+	font-size: 15px;
 	display: flex;
 	justify-content: center; 
 }
@@ -296,7 +296,8 @@ li a {
 }
 
 #game-video .video-file {
-	width:100%;
+	width:65%;
+	/* width: 100%; */
 }
 
 #karate-video .video-file {
@@ -338,15 +339,15 @@ footer {
 /* Very large devices (large desktops, 1920px and up) */
 @media (max-width: 1920px) {
 	.panels {
-		font-size: 30px;
+		font-size: 20px;
 	}
 	
 	.header-nobg a, .header, nav,nav a, header {
-		font-size: 27.5px;
+		font-size: 20px;
 	}
 
 	h2:after {
-		margin-top: 90px;
+		margin-top: 60px;
 		height: 2.5px;
 	}
 
@@ -362,15 +363,15 @@ footer {
 /* Extra large devices (large desktops, 1366px and up) */
 @media (max-width: 1366px) {
 	.panels {
-		font-size: 20px;
+		font-size: 15px;
 	} 
 
 	.header-nobg a, .header, nav,nav a, header {
-		font-size: 20px;
+		font-size: 15px;
 	}
 	
 	h2:after {
-		margin-top: 55px;
+		margin-top: 45px;
 	}
 
 	.image-button {
@@ -385,7 +386,7 @@ footer {
 /* Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
 	.header-nobg a, .header, nav,nav a, header {
-		font-size: 20px;
+		font-size: 15px;
 	}
 }
 
@@ -444,6 +445,11 @@ footer {
 		width: 100em;
 		max-width: 100%;
 	}
+
+	h2:after {
+		margin-top: 30px;
+		height: 2px;
+	}
 }
 
 @media (max-height: 576px) {
@@ -464,8 +470,12 @@ footer {
 	}
 
 	.header-nobg a, .header, nav,nav a, header {
-		font-size: 13px;
+		font-size: 11px;
 	}
+
+	.panels {
+		font-size: 11px;
+	} 
 
 	.content-container {
 		max-width: 95%;
@@ -487,4 +497,8 @@ footer {
 	.header-nobg a, .header, nav,nav a, header {
 		font-size: 11px;
 	}
+
+	.panels {
+		font-size: 11px;
+	} 
 }
