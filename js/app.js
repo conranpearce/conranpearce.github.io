@@ -5,10 +5,21 @@ window.onload = function() {
 var nav = document.getElementById('header-bar');
 
 window.onscroll = function () { 
+
     if (document.scrollingElement.scrollTop >= document.scrollingElement.clientHeight) {
-        this.nav.classList.remove("header-nobg");
+        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+        if (width <= 576) {
+            this.nav.style.display = 'none';
+        }  else {
+            this.nav.classList.remove("header-nobg");
+        }
+
     } else {
-        this.nav.classList.add("header-nobg");
+        if (width <= 576) {
+            this.nav.style.display = 'inline';
+        } else {
+            this.nav.classList.add("header-nobg");
+        }
     }    
 };
 
