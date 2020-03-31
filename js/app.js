@@ -18,6 +18,7 @@ window.onscroll = function () {
         if (width <= 576) {
             this.nav.style.display = 'inline';
         } else {
+            this.nav.style.display = 'inline';
             this.nav.classList.add("header-nobg");
         }
     }    
