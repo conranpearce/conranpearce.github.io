@@ -1,5 +1,22 @@
 window.onload = function() {
+  
+    var placeholder = document.querySelector('.placeholder'),
+        small = placeholder.querySelector('.img-small')
     
+    // Loading and displaying smaller image
+    var img = new Image();
+    img.src = small.src;
+    img.onload = function () {
+     small.classList.add('loaded');
+    };
+    
+    // Load in larger image
+    var imgLarge = new Image();
+    imgLarge.src = placeholder.dataset.large; 
+    imgLarge.onload = function () {
+      imgLarge.classList.add('loaded');
+    };
+    placeholder.appendChild(imgLarge);
 }
 
 var nav = document.getElementById('header-bar');
