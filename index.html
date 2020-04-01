@@ -8,7 +8,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css"> 
-  <link rel="icon" href="images/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="icons.ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="icons.ico/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="icons.ico/favicon-16x16.png">
+
   <title>Conran Pearce</title>
 </head>
 
@@ -19,17 +22,19 @@
       <nav>
         <a href="#about-me">About Me</a>
         <a href="#projects">Projects</a>
-        <a href="#martial-arts">Marial Arts</a>
+        <a href="#martial-arts">Martial Arts</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <section id="landing" class="full-page">
-    <div class="content-container fill-container">
-      <h1 id="landing-page">CONRAN PEARCE</h1>
+    <h1 id="landing-page">CONRAN PEARCE</h1>
+    <div class="placeholder" data-large="images/background.jpg">
+      <img src="images/background-copy.jpg" class="img-small">
+      <div style="padding-bottom: 66.6%;"></div>
     </div>
-  </section>
+</section>
 
   <section class="panels content-container" id="about-me">
     
@@ -50,44 +55,39 @@
     <p class="sub-header">Primary Languages:</p>
 
     <ul class="programming-list">
-      <li class="programming-point"><a>JavaScript</a></li>
-      <li class="programming-point"><a>Python</a></li>
-      <li class="programming-point"><a>Java</a></li>
+      <li><a>JavaScript</a></li>
+      <li><a>Python</a></li>
+      <li><a>Java</a></li>
     </ul>
 
     <p class="sub-header">Experience With:</p>
 
     <ul class="programming-list">
-      <li class="programming-point"><a>HTML5</a></li>
-      <li class="programming-point"><a>CSS3</a></li>
-      <li class="programming-point"><a>Node.js</a></li>
-      <li class="programming-point"><a>C</a></li>
-      <li class="programming-point"><a>C#</a></li>
-      <li class="programming-point"><a>PHP</a></li>
-      <li class="programming-point"><a>Vue.js</a></li>
-      <li class="programming-point"><a>CSS Pre-processors</a></li>
-      <li class="programming-point"><a>Unity</a></li>
-      <li class="programming-point"><a>Git</a></li>
-      <li class="programming-point"><a>APIs</a></li>
+      <li><a>HTML5</a></li>
+      <li><a>CSS3</a></li>
+      <li><a>Node.js</a></li>
+      <li><a>C</a></li>
+      <li><a>C#</a></li>
+      <li><a>PHP</a></li>
+      <li><a>Vue.js</a></li>
+      <li><a>CSS Pre-processors</a></li>
+      <li><a>Unity</a></li>
+      <li><a>Git</a></li>
+      <li><a>APIs</a></li>
     </ul>
 
     <p class="sub-header">Modules Studied Include:</p>
 
     <ul class="programming-list">
-      <li class="programming-point"><a>Object-Oriented Systems Development</a></li>
-      <li class="programming-point"><a>Intro to Artificial Intelligence</a></li>
-      <li class="programming-point"><a>IoT</a></li>
-      <li class="programming-point"><a>Design and Analysis of Data Structures and Algorithms</a></li>
-      <li class="programming-point"><a>Intelligent Systems</a></li>
+      <li><a>Object-Oriented Systems Development</a></li>
+      <li><a>Intro to Artificial Intelligence</a></li>
+      <li><a>IoT</a></li>
+      <li><a>Design and Analysis of Data Structures and Algorithms</a></li>
+      <li><a>Intelligent Systems</a></li>
     </ul>
 
-    <!-- <div class="larger-buttons">
-      <a href='files/Conran_Pearce_CV.pdf' target='_blank' class="link-bottom-button"><img src="images/document-cv.png" alt="cv"  class="link-button"></a>
-    </div>   -->
-
-
-    <div class="banner_column">
-      <a href='files/Conran_Pearce_CV.pdf' target='_blank' class="link-bottom-button">
+    <div class="image-button">
+      <a href='files/Conran_Pearce_CV.pdf' target='_blank'>
           <img src="images/document-cv.png" alt="CV">
       </a>
     </div>
@@ -113,7 +113,7 @@
     </ul> 
 
     <div class="video-container" id="game-video">
-      <div class="video" >
+      <div class="video" id="game-parent">
           <video class="video-file" alt="Block game" loop muted>
             <source src="files/block-game.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -121,19 +121,11 @@
       </div>
     </div>
 
-    <!-- <div class="larger-buttons">
-      <a href='http://block-game.netlify.com/' target='_blank' class="link-bottom-button"><img src="images/play-button.png" alt="play game"  class="link-button"></a>
-    </div> -->
-
-
-    <div class="banner_column">
-      <a href='http://block-game.netlify.com/' target='_blank' class="link-bottom-button">
+    <div class="image-button">
+      <a href='http://block-game.netlify.com/' target='_blank'>
           <img src="images/play-button.png" alt="play game">
       </a>
     </div>
-
-
-
 
   </section>
 
@@ -163,7 +155,7 @@
     </ul> 
 
     <div class="video-container" id="karate-video">
-      <div class="video">
+      <div class="video" id="karate-parent">
           <video class="video-file" alt="Karate knockout" loop muted>
             <source src="files/karate.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -171,12 +163,8 @@
       </div>
     </div>
 
-    <!-- <div class="larger-buttons">
-      <a href='https://www.instagram.com/p/BxVF3HPHv0G/' target='_blank' class="link-bottom-button"><img src="images/instagram.png" alt="instagram"  class="link-button"></a>
-    </div> -->
-
-    <div class="banner_column">
-      <a href='https://www.instagram.com/p/BxVF3HPHv0G/' target='_blank' class="link-bottom-button">
+    <div class="image-button">
+      <a href='https://www.instagram.com/p/BxVF3HPHv0G/' target='_blank'>
           <img src="images/instagram.png" alt="instagram link">
       </a>
     </div>
@@ -184,16 +172,20 @@
   </section>
 
   <section class="panels content-container" id="contact">
-    <h2 class="titles">Contact</h2>
+    <h2>Contact</h2>
 
     <div id="contact-text">
       <p><strong>Email: </strong>conranpearce@hotmail.com</p>
       <p><strong>Phone: </strong>+44 771864140</p>
     </div>
 
-    <div class="links-bottom">
-      <a href='www.linkedin.com/in/conran-pearce/' target='_blank' class="link-bottom-button"><img src="images/linkedin.png" alt="linkedin" class="link-bottom-button"></a>
-      <a href='https://www.github.com/conranpearce/' target='_blank' class="link-bottom-button"><img src="images/github.png" alt="github" class="link-bottom-button"></a>
+    <div id="contact-social">
+      <a href='https://www.linkedin.com/in/conran-pearce/' target='_blank'>
+        <img class="social-link" src="images/linkedin.png" alt="linkedin">
+      </a>
+      <a href='https://www.github.com/conranpearce/' target='_blank'>
+        <img class="social-link" src="images/github.png" alt="github">
+      </a>
     </div>
 
   </section>
@@ -203,5 +195,5 @@
   <script src="js/app.js" type="text/javascript"></script>
 
   </body>
-
+  
 </html>
