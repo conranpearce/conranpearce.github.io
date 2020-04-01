@@ -1,5 +1,4 @@
 window.onload = function() {
-  
     var placeholder = document.querySelector('.placeholder'),
         small = placeholder.querySelector('.img-small')
     
