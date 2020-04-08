@@ -9,6 +9,7 @@ body, html {
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	overflow-y:scroll; 
 }
 
 .content-container {
@@ -475,7 +476,7 @@ footer {
 @media (max-width: 576px) {
 
 	.header-nobg a, .header, nav,nav a, header {
-		font-size: 15px;
+		font-size: 14px;
 	}
 
 	.content-container {
@@ -492,7 +493,7 @@ footer {
 	}
 
 	h2:after {
-		margin-top: 30px;
+		margin-top: 40px;
 		height: 2px;
 	}
 }
@@ -515,11 +516,11 @@ footer {
 	}
 
 	.header-nobg a, .header, nav,nav a, header {
-		font-size: 11px;
+		font-size: 14px;
 	}
 
 	.panels, footer {
-		font-size: 11px;
+		font-size: 14px;
 	} 
 
 	.content-container {
@@ -544,11 +545,11 @@ footer {
 @media (max-width: 320px) {
 
 	.header-nobg a, .header, nav,nav a, header {
-		font-size: 11px;
+		font-size: 14px;
 	}
 
 	.panels, footer {
-		font-size: 11px;
+		font-size: 14px;
 	} 
 }
 
