@@ -515,7 +515,7 @@ footer {
 		font-size: 11px;
 	}
 
-	.panels {
+	.panels, footer {
 		font-size: 11px;
 	} 
 
@@ -544,7 +544,7 @@ footer {
 		font-size: 11px;
 	}
 
-	.panels {
+	.panels, footer {
 		font-size: 11px;
 	} 
 }
