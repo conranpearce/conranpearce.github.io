@@ -8,6 +8,7 @@
 body, html { 
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 .content-container {
@@ -321,7 +322,13 @@ li a {
 	box-shadow: 0 0 0 0 rgba(0,0,0,0.5);
 	transition: box-shadow 0.2s linear;
 	-webkit-transition: box-shadow 0.2s linear;
-    -moz-transition: box-shadow 0.2s linear;
+	-moz-transition: box-shadow 0.2s linear;
+	transform: scale(1);
+	-ms-transform: scale(1);
+	-webkit-transform: scale(1);
+	transition: transform 0.2s linear;
+	-webkit-transition: transform 0.2s linear;
+	-moz-transition: transform 0.2s linear;
 }
 
 #game-video .video-file {
@@ -338,6 +345,12 @@ li a {
 	transition: box-shadow 0.2s linear;
 	-webkit-transition: box-shadow 0.2s linear;
 	-moz-transition: box-shadow 0.2s linear;
+	transform: scale(1.02);
+	-ms-transform: scale(1.02);
+	-webkit-transform: scale(1.02);
+	transition: transform 0.2s linear;
+	-webkit-transition: transform 0.2s linear;
+	-moz-transition: transform 0.2s linear;
 	z-index: 99;
 }
 
@@ -518,6 +531,10 @@ footer {
 	.video-container {
 		display: none;
 	}
+
+	.center-img {
+		display: flex;
+	}
 }
 
 /* Tiny devices, such as iPhone SE (portrait phones, 320px and up) */
@@ -531,3 +548,4 @@ footer {
 		font-size: 11px;
 	} 
 }
+
