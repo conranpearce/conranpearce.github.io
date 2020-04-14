@@ -9,7 +9,7 @@ There are no prerequisites for this project.
 
 Netlify has been linked to the GitHub reposity to be able to have live sites up to date with the code being committed.
 
-Develop branch live site at https://conranpearce-develop.netlify.com/
+Develop branch live site at https://conranpearce-develop.netlify.app/
 
 Live deployment (through GitHub Pages) at https://conranpearce.github.io/
 
