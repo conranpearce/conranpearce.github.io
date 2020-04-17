@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
@@ -11,6 +11,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="icons.ico/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="96x96" href="icons.ico/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="icons.ico/favicon-16x16.png">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Conran Pearce</title>
 </head>
 
@@ -107,8 +108,8 @@
       <li>If you complete the level or fall off the map the game will reset automatically.</li>
     </ul> 
 
-    <div class="video-container" id="game-video">
-      <div class="video" id="game-parent">
+    <div class="video-container" id="game-video" data-aos="fade-up">
+        <div class="video" id="game-parent">
           <video class="video-file" alt="Block game" loop muted>
             <source src="files/block-game.mp4" type="video/mp4">
               Your browser does not support the video tag.
@@ -117,7 +118,7 @@
     </div>
 
     <div class="image-button">
-      <a href='http://block-game.netlify.com/' target='_blank'>
+      <a href='http://block-game.netlify.app/' target='_blank'>
           <img src="images/play-button.png" alt="play game">
       </a>
     </div>
@@ -148,7 +149,7 @@
       <li>2nd Place University Kickboxing Championships 2019</li>
     </ul> 
 
-    <div class="video-container" id="karate-video">
+    <div class="video-container" id="karate-video" data-aos="fade-up">
       <div class="video" id="karate-parent">
           <video class="video-file" alt="Karate knockout" loop muted>
             <source src="files/karate.mp4" type="video/mp4">
@@ -171,7 +172,7 @@
       <p><strong>Phone: </strong>+44 771864140</p>
     </div>
 
-    <div id="contact-social">
+    <div id="contact-social" >
       <a class="social-link" href='https://www.linkedin.com/in/conran-pearce/' target='_blank'>
         <img class="link-size" src="images/linkedin.png" alt="linkedin">
       </a>
@@ -184,6 +185,11 @@
   <footer>Built by <b>Conran Pearce</b></footer>
 
   <script src="js/main.js" type="text/javascript"></script>
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 750,
+    });
+  </script>
   </body>
 </html>

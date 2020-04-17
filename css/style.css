@@ -463,19 +463,13 @@ footer {
 	h1 {
     	font-size: 4rem;
 	}	
-}
-
-@media (max-width: 600px) {
-
+	header {
+		display: none;
+	}
 }
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
-
-	.header-nobg a, .header, nav,nav a, header {
-		font-size: 14px;
-	}
-
 	.content-container {
 		max-width: 90%;
 	}
@@ -503,17 +497,12 @@ footer {
 
 /* Tiny devices (portrait phones, 450px and up) */
 @media (max-width: 450px) {
-
 	.container {
 		display: block;
 	}
 
   	h1 {
     	font-size: 3rem;
-	}
-
-	.header-nobg a, .header, nav,nav a, header {
-		font-size: 14px;
 	}
 
 	.panels, footer {
@@ -540,11 +529,6 @@ footer {
 
 /* Tiny devices, such as iPhone SE (portrait phones, 320px and up) */
 @media (max-width: 320px) {
-
-	.header-nobg a, .header, nav,nav a, header {
-		font-size: 14px;
-	}
-
 	.panels, footer {
 		font-size: 14px;
 	} 

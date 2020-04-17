@@ -23,20 +23,9 @@ var nav = document.getElementById('header-bar');
 window.onscroll = function () { 
 
     if (document.scrollingElement.scrollTop >= document.scrollingElement.clientHeight) {
-        var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-        if (width <= 576) {
-            this.nav.style.display = 'none';
-        }  else {
-            this.nav.classList.remove("header-nobg");
-        }
-
+        this.nav.classList.remove("header-nobg");
     } else {
-        if (width <= 576) {
-            this.nav.style.display = 'inline';
-        } else {
-            this.nav.style.display = 'inline';
-            this.nav.classList.add("header-nobg");
-        }
+        this.nav.classList.add("header-nobg");
     }    
 };
 
