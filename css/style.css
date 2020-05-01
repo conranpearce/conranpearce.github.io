@@ -202,6 +202,20 @@ section.full-page {
 	justify-content: center; 
 }
 
+a {
+	position: relative;
+}
+  
+a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	height: 1.5px;
+	width: 0;
+}
+
 .link{
 	font-weight: bold;
 	border:none;
@@ -211,10 +225,16 @@ section.full-page {
 	-webkit-tap-highlight-color: white;
 }
 
-.link:hover {
-	text-decoration: underline;
+.link:after {
+	transition: width .5s ease, background-color .5s ease, left .5s ease;
 }
-
+  
+.link:hover:after {
+	width: 100%;
+	left: 0;
+	background: #000000;
+}
+  
 #contact-social {
 	display:flex;
 	justify-content: center;
@@ -533,4 +553,3 @@ footer {
 		font-size: 14px;
 	} 
 }
-
