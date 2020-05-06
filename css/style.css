@@ -40,7 +40,7 @@ nav {
 	padding-bottom: 5px;
 }
   
-  nav a {
+nav a {
 	display: inline-block;
 	color: #ffffff;
 	text-align: center;
@@ -155,7 +155,7 @@ h1 {
 	height: 100vh;
 }
   
-  .placeholder img {
+.placeholder img {
 	position: absolute;
 	opacity: 0;
 	top: 0;
@@ -194,7 +194,6 @@ section.full-page {
 
 .panels {
 	padding-top: 20px;
-	padding-bottom: 20px;
 	font-size: 15px;
 	padding-left:30px;
 	padding-right:30px;
@@ -398,59 +397,13 @@ footer {
 	text-align: center;
 	left: 50%;
 	margin: 0 auto;
+	margin-top: 20px;
 	margin-bottom: 20px;
 	-webkit-transform: translateX(-50%);
 	transform: translateX(-50%);
 }
 
 /** RESPONSIVENESS **/
-
-/* Very large devices (large desktops, 1920px and up) */
-@media (max-width: 1920px) {
-	.panels {
-		font-size: 20px;
-	}
-	
-	.header-nobg a, .header, nav,nav a, header {
-		font-size: 20px;
-	}
-
-	h2:after {
-		margin-top: 60px;
-		height: 2.5px;
-	}
-
-	.image-button {
-		width:80px;
-	}
-
-	.social-link {
-		height: 60px;
-	}
-}
-
-/* Extra large devices (large desktops, 1366px and up) */
-@media (max-width: 1366px) {
-	.panels {
-		font-size: 15px;
-	} 
-
-	.header-nobg a, .header, nav,nav a, header {
-		font-size: 15px;
-	}
-	
-	h2:after {
-		margin-top: 45px;
-	}
-
-	.image-button {
-		width:60px;
-	}
-
-	.social-link {
-		height: 45px;
-	}
-}
 
 /* Large devices (large desktops, 1200px and up) */
 @media (max-width: 1200px) {
@@ -474,27 +427,12 @@ footer {
 		font-size: 17px;
 	}
 
-	.bullet-point-container {
-		width: 100em;
-		max-width: 100%;
-	}
-
 	.image-button {
 		width:50px;
 	}
 }
 
-/* Medium devices (tablets, 768px and up) */
-@media (max-width: 768px) {
-	h1 {
-    	font-size: 4rem;
-	}	
-	header {
-		display: none;
-	}
-}
-
-/* Small devices (landscape phones, 576px and up) */
+/* Small devices (portrait phones, 576px and up) */
 @media (max-width: 576px) {
 	.content-container {
 		max-width: 90%;
@@ -504,58 +442,12 @@ footer {
 		font-size: 3.5rem;
 	}
 
-	.bullet-point-container {
-		width: 100em;
-		max-width: 100%;
-	}
-
 	h2:after {
 		margin-top: 40px;
 		height: 2px;
 	}
-}
 
-@media (max-height: 576px) {
-  h1 {
-    font-size: 3.5rem;
-  }
-}
-
-/* Tiny devices (portrait phones, 450px and up) */
-@media (max-width: 450px) {
-	.container {
-		display: block;
-	}
-
-  	h1 {
-    	font-size: 3rem;
-	}
-
-	.panels, footer {
-		font-size: 14px;
-	} 
-
-	.content-container {
-		max-width: 95%;
-	}
-
-	.bullet-point-container {
-		width: 100em;
-		max-width: 100%;
-	}
-	
 	.video-container {
 		display: none;
 	}
-
-	.center-img {
-		display: flex;
-	}
-}
-
-/* Tiny devices, such as iPhone SE (portrait phones, 320px and up) */
-@media (max-width: 320px) {
-	.panels, footer {
-		font-size: 14px;
-	} 
 }
