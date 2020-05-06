@@ -1,7 +1,10 @@
 window.onload = function() {
-    var placeholder = document.querySelector('.placeholder'),
-        small = placeholder.querySelector('.img-small')
+    var placeholder = document.querySelector('.placeholder');
+    var small = placeholder.querySelector('.img-small');
     
+    var conranpearce = document.getElementById('landing-page');
+
+
     // Loading and displaying smaller image
     var img = new Image();
     img.src = small.src;
@@ -16,6 +19,9 @@ window.onload = function() {
       imgLarge.classList.add('loaded');
     };
     placeholder.appendChild(imgLarge);
+    
+    // Fade in text from here
+    conranpearce.style.opacity = 1;
 }
 
 var nav = document.getElementById('header-bar');
