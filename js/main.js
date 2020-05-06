@@ -1,3 +1,5 @@
+const body = document.getElementsByTagName('body')[0];
+
 window.onload = function() {
     var placeholder = document.querySelector('.placeholder');
     var small = placeholder.querySelector('.img-small');
@@ -17,6 +19,7 @@ window.onload = function() {
         imgLarge.classList.add('loaded');
         // Fade in text from here
         conranpearce.style.opacity = 1;
+        body.style['overflow-y']= 'scroll';
     };
     placeholder.appendChild(imgLarge);
 }
