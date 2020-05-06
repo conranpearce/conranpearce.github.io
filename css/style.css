@@ -104,6 +104,7 @@ nav .highlighted {
 
 .sub-header {
 	font-weight: bold;
+	font-size: 24px;
 }
 
 h2 {
@@ -325,10 +326,8 @@ li a {
 
 /** PROJECTS & MARTIAL ARTS **/
 
-.bullet-point-container {
-	width: 60em;
-	max-width: 60%;
-	margin: auto;
+#martial-arts p span {
+	display: block;
 }
 
 /** VIDEOS **/
@@ -362,7 +361,6 @@ li a {
 
 #game-video .video-file {
 	width:65%;
-	/* width: 100%; */
 }
 
 #karate-video .video-file {
