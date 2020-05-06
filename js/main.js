@@ -1,19 +1,25 @@
+const body = document.getElementsByTagName('body')[0];
+
 window.onload = function() {
-    var placeholder = document.querySelector('.placeholder'),
-        small = placeholder.querySelector('.img-small')
-    
+    var placeholder = document.querySelector('.placeholder');
+    var small = placeholder.querySelector('.img-small');
+    var conranpearce = document.getElementById('landing-page');
+
     // Loading and displaying smaller image
     var img = new Image();
     img.src = small.src;
     img.onload = function () {
-     small.classList.add('loaded');
+        small.classList.add('loaded');
     };
     
     // Load in larger image
     var imgLarge = new Image();
     imgLarge.src = placeholder.dataset.large; 
     imgLarge.onload = function () {
-      imgLarge.classList.add('loaded');
+        imgLarge.classList.add('loaded');
+        // Fade in text from here
+        conranpearce.style.opacity = 1;
+        body.style['overflow-y']= 'scroll';
     };
     placeholder.appendChild(imgLarge);
 }
