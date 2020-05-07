@@ -24,7 +24,7 @@ window.onload = function() {
     placeholder.appendChild(imgLarge);
 }
 
-var nav = document.getElementById('header-bar');
+var nav = document.getElementsByTagName('header')[0];
 
 window.onscroll = function () { 
 
