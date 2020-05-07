@@ -181,6 +181,8 @@ h1 {
 
 #landing-img {
 	background-image: url('../files/images/background-404.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .placeholder {
