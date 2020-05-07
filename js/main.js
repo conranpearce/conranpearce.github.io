@@ -31,15 +31,24 @@ window.onload = function() {
     }
 }
 
+window.addEventListener("resize", checkNavBar);
+
 window.onscroll = function () { 
-        if (width > 768) {
+    this.checkNavBar();
+};
+
+function checkNavBar() {
+    width = window.innerWidth;
+    if (this.width > 768) {
         if (document.scrollingElement.scrollTop >= document.scrollingElement.clientHeight) {
             this.nav.classList.remove("header-nobg");
         } else {
-            this.nav.classList.add("header-nobg");
-        }    
+        this.nav.classList.add("header-nobg");
+        }
+    } else {
+        this.nav.classList.remove("header-nobg");
     }
-};
+}
 
 var figure = $(".video-file");
 
