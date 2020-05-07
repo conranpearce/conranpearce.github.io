@@ -179,6 +179,10 @@ h1 {
 	z-index: 1;
 }
 
+#landing-img {
+	background-image: url('../files/images/background-404.jpg');
+}
+
 .placeholder {
 	background-color: #f6f6f6;
 	background-size: cover;
@@ -439,7 +443,6 @@ footer {
 }
 
 /** RESPONSIVENESS **/
-
 
 /* Larger devices (desktops, 960px and up) */
 @media (max-width: 960px) {
