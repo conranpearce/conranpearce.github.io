@@ -20,6 +20,7 @@ window.onload = function() {
         imgLarge.classList.add('loaded');
         // Fade in text from here
         conranpearce.style.opacity = 1;
+        nav.style.opacity = 1;
         body.style['overflow-y']= 'scroll';
     };
     
