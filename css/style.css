@@ -56,7 +56,6 @@ nav a {
 }
   
 nav a:hover, header .menu-icon .navicon:hover {
-	/* nav a:hover, .header .menu-icon .navicon:hover { */
 	opacity: 1;
 	transition: opacity 300ms ease 0ms;
 }
