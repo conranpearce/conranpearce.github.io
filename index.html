@@ -16,20 +16,21 @@
 </head>
 
 <body>
-  <header id="header-bar" class="header-nobg">
-    <div class="flex-container flex-right">
-      <nav>
-        <a href="#about-me">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="#martial-arts">Martial Arts</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+
+  <header class="header-nobg">
+    <input class="menu-btn" type="checkbox" id="menu-btn" />
+    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+    <nav class="menu">
+      <a href="#about-me">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#martial-arts">Martial Arts</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="full-page">
+  <section class="full-page" id="landing-img">
     <h1 id="landing-page">CONRAN PEARCE</h1>
-    <div class="placeholder" data-large="files/images/background.jpg">
+    <div class="placeholder" id="landing-image" data-large="files/images/background.jpg">
       <img src="files/images/background-copy.jpg" class="img-small">
       <div style="padding-bottom: 66.6%;"></div>
     </div>
