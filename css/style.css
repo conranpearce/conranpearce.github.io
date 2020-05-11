@@ -29,7 +29,6 @@ header {
 	background-color: #9bbbcc;
 	transition: background-color 0.3s linear;
 	opacity: 0;
-	transition: opacity 1s linear;
     z-index: 3;
 }
 
