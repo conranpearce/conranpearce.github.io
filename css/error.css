@@ -1,0 +1,84 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu';
+}
+
+#landing {
+    background-image: url('../files/images/background-404.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.full-page {
+      width:100vw;
+      max-width: 100%;
+      height: 100vh;
+      overflow: hidden;
+}
+
+.landing-page {
+    font-size: 30px;
+    font-size: 3.5rem;
+    color: white;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+a {
+	position: relative;
+}
+  
+a:after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	height: 1.5px;
+	width: 0;
+}
+
+.link{
+	font-weight: bold;
+	border:none;
+	outline:none;
+	text-decoration:none;
+	-webkit-tap-highlight-color: white;
+    transition: opacity 300ms ease 0ms;
+    color: white;
+}
+
+.link:after {
+    transition: width .5s ease, background-color .5s ease, left .5s ease;
+}
+  
+.link:hover:after {
+	width: 100%;
+	left: 0;
+	background: #ffffff;
+}
+  
+.centered-text {
+    text-align: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+}
+
+/* Small devices (portrait phones, 576px and below) */
+@media (max-width: 576px) {
+	.centered-text {
+        top: 95%;
+    }
+}
