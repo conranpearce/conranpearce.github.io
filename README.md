@@ -17,3 +17,6 @@ Live deployment at https://conranpearce.github.io/
 
 ## Compatability
 The page should be able to be displayed upon various browsers and media, with slight alterations to fit the display.
+
+## Demo
+![website demo](https://giphy.com/gifs/J0Ik3sFvkWpLtZNl4e/html5)
