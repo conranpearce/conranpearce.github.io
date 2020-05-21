@@ -19,4 +19,4 @@ Live deployment at https://conranpearce.github.io/
 The page should be able to be displayed upon various browsers and media, with slight alterations to fit the display.
 
 ## Demo
-![Website demo](demo.gif)
+![Website demo](demo/demo.gif)
