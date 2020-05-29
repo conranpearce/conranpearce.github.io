@@ -3,6 +3,58 @@
 /* #2d767f */
 /* #b4f1f1 */
 /* #ecfffb */
+/* Colour Scheme: */
+/* #1e6262 */
+/* #2d767f */
+/* #b4f1f1 */
+/* #ecfffb */
+/** PARALLAX EFFECT **/
+/* Extended and modified from Keith Clark (https://keithclark.co.uk/articles/pure-css-parallax-websites/) */
+.parallax {
+  -webkit-perspective: 1px;
+          perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+}
+
+.content {
+  text-align: center;
+  color: #FFF;
+  background-color: #2d767f;
+  margin-top: 100vh;
+  padding: 35px;
+  -webkit-box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0.5px 0.5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-2px) scale(3);
+          transform: translateZ(-2px) scale(3);
+  padding: 150px;
+  text-align: center;
+}
+
+.parallax__group {
+  position: relative;
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
 /** GLOBAL **/
 html, body {
   height: 100%;
