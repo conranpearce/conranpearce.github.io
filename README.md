@@ -5,7 +5,7 @@
 <p align="center">Basic static website for displaying information about myself :man:
 </p>
 
-<p align="center">Using HTML5 and CSS3 have been used to create the site.
+<p align="center">HTML5 and CSS3 have been used to create the website.
 </p>
 
 <p align="center">
@@ -24,5 +24,5 @@ Develop branch hosted using Netlify live site at https://conranpearce-develop.ne
 
 Live deployment at https://conranpearce.github.io/
 
-## Compatability
+## Compatability :computer: :iphone:
 The page should be able to be displayed upon various browsers and media, with slight alterations to fit the display.
