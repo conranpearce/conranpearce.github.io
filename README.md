@@ -1,4 +1,6 @@
-<h1 align="center"><a href="https://conranpearce.github.io/">conranpearce.github.io</a></h1>
+<h1 align="center">
+  <a href="https://conranpearce.github.io/">:wave: conranpearce.github.io</a>
+</h1>
 
 <p align="center">Basic static website for displaying information about myself.
 </p>
