@@ -1,7 +1,14 @@
-# conranpearce.github.io
-Basic static website for displaying information about myself.
+<h1 align="center"><a href="https://conranpearce.github.io/">conranpearce.github.io</a></h1>
 
-HTML5 and CSS3 have been used to create the site.
+<p align="center">Basic static website for displaying information about myself.
+</p>
+
+<p align="center">Using HTML5 and CSS3 have been used to create the site.
+</p>
+
+<p align="center">
+  <img src="demo/demo.gif"/>
+</p>
 
 [formspree.io](https://formspree.io/) has been used for a contact form on a static website.
 
@@ -17,6 +24,3 @@ Live deployment at https://conranpearce.github.io/
 
 ## Compatability
 The page should be able to be displayed upon various browsers and media, with slight alterations to fit the display.
-
-## Demo
-![Website demo](demo/demo.gif)
