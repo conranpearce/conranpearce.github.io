@@ -2,7 +2,7 @@
   <a href="https://conranpearce.github.io/">:wave: conranpearce.github.io</a>
 </h1>
 
-<p align="center">Basic static website for displaying information about myself.
+<p align="center">Basic static website for displaying information about myself :man:
 </p>
 
 <p align="center">Using HTML5 and CSS3 have been used to create the site.
