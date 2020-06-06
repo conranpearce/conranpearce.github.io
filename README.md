@@ -33,5 +33,5 @@ The page should be able to be displayed upon various browsers and media, with sl
 ## Steps to run
 - git clone this repo
 - cd into this repo
-- For CSS Pre-Processing change into 'stylesheets' folder and run the command
+- For CSS Pre-Processing (using [node-sass](https://www.npmjs.com/package/node-sass))  change into 'stylesheets' folder and run the command
   ```node-sass sass --watch -o css```
