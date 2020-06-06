@@ -27,3 +27,7 @@ There are no prerequisites for this project.
 
 ## Compatability :computer: :iphone:
 The page should be able to be displayed upon various browsers and media, with slight alterations to fit the display.
+
+## Steps to run
+- For CSS Pre-Processing change into 'stylesheets' folder and run the command
+- ```node-sass sass --watch -o css```
