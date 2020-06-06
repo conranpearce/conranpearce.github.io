@@ -32,4 +32,4 @@ The page should be able to be displayed upon various browsers and media, with sl
 - git clone this repo
 - cd into this repo
 - For CSS Pre-Processing change into 'stylesheets' folder and run the command
-- ```node-sass sass --watch -o css```
+  ```node-sass sass --watch -o css```
