@@ -22,7 +22,7 @@ Live deployment through GitHub Pages at https://conranpearce.github.io/
 
 ## Prerequisites
 - node
-- [node-sass](https://www.npmjs.com/package/node-sass) (global install) or [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) (if you are using VS Code)
+- [node-sass](https://www.npmjs.com/package/node-sass) (global install) or [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) (Visual Studio Code)
 
 ## 
 [formspree.io](https://formspree.io/) has been used for a contact form on a static website.
