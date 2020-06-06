@@ -20,10 +20,12 @@ Develop branch hosted using Netlify live site at https://conranpearce-develop.ne
 
 Live deployment through GitHub Pages at https://conranpearce.github.io/
 
+## Prerequisites
+- node
+- [node-sass](https://www.npmjs.com/package/node-sass) (global install) or [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) (if you are using VS Code)
+
 ## 
 [formspree.io](https://formspree.io/) has been used for a contact form on a static website.
-
-There are no prerequisites for this project.
 
 ## Compatability :computer: :iphone:
 The page should be able to be displayed upon various browsers and media, with slight alterations to fit the display.
