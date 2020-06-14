@@ -16,7 +16,7 @@
 
 Netlify has been linked to the GitHub repository to be able to have live sites up to date with the code being committed.
 
-Develop branch hosted using Netlify live site at https://conranpearce-develop.netlify.app
+Develop branch hosted using Netlify live site at https://develop-conranpearce.netlify.app
 
 Live deployment through GitHub Pages at https://conranpearce.github.io/
 
