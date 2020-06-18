@@ -30,6 +30,9 @@ Live deployment through GitHub Pages at https://conranpearce.github.io/
 ## Compatability :computer: :iphone:
 The page should be able to be displayed upon various browsers and media, with slight alterations to fit the display.
 
+You can also view the website in black and white, optimising light and dark mode preferences [here](https://conranpearce-light-dark.netlify.app/).
+The respoitory for this project is [/light-dark-mode/](https://github.com/conranpearce/light-dark-mode/)
+
 ## Steps to run
 - git clone this repo
 - cd into this repo
