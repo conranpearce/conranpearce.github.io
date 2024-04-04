@@ -5,16 +5,25 @@ HTML5, CSS3 and JavaScript have been used to create the site.
 
 There are no prerequisites for this project.
  
+<p align="center">Basic static website for displaying information about myself :man:</p>
+
+<p align="center">HTML5 and CSS3 have been used to create the website.</p>
+
 ## Deployment
 
 Netlify has been linked to the GitHub repository to be able to have live sites up to date with the code being committed.
 
-Develop branch live site at https://conranpearce-develop.netlify.app/
-
 Live deployment (through GitHub Pages) at https://conranpearce.github.io/
+## Prerequisites
+- node
+- [node-sass](https://www.npmjs.com/package/node-sass) (global install) or [Live Sass Compiler](https://marketplace.visualstudio.com/items?itemName=ritwickdey.live-sass) (Visual Studio Code)
 
-## Compatability
-The page should be able to be displayed upon various browsers and media, with slight alterations to fit the display.
+## 
+[formspree.io](https://formspree.io/) has been used for a contact form on a static website.
 
-## Page Example
-<img width="1424" alt="Screenshot 2020-02-24 at 13 46 58" src="https://user-images.githubusercontent.com/54678624/75157499-275f4300-570c-11ea-89a6-716773784618.png">
+## Steps to run
+- git clone this repo
+- cd into this repo
+- For CSS Pre-Processing (using [node-sass](https://www.npmjs.com/package/node-sass))  change into 'stylesheets' folder and run the command
+  ```node-sass sass --watch -o css```
+>>>>>>> refs/remotes/origin/master
