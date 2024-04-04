@@ -1,175 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-  <meta name="description" content="Conran Pearce">
-  <meta name="keywords" content="student,edf,bristol,uwe,computer,science">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/style.css"> 
-  <link rel="icon" type="image/png" sizes="32x32" href="icons.ico/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="icons.ico/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="icons.ico/favicon-16x16.png">
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <title>Conran Pearce</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Conran Pearce">
+    <meta name="keywords" content="student,edf,bristol,uwe,computer,science">  
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon//favicon-16x16.png">
+    <link rel="stylesheet" type="text/css" href="stylesheets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f8e9bf29fb.js" crossorigin="anonymous"></script>
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <link href="splash/apple_splash_2048.png" sizes="2048x2732" rel="apple-touch-startup-image" />
+    <link href="splash/apple_splash_1668.png" sizes="1668x2224" rel="apple-touch-startup-image" />
+    <link href="splash/apple_splash_1536.png" sizes="1536x2048" rel="apple-touch-startup-image" />
+    <link href="splash/apple_splash_1125.png" sizes="1125x2436" rel="apple-touch-startup-image" />
+    <link href="splash/apple_splash_1242.png" sizes="1242x2208" rel="apple-touch-startup-image" />
+    <link href="splash/apple_splash_750.png" sizes="750x1334" rel="apple-touch-startup-image" />
+    <link href="splash/apple_splash_640.png" sizes="640x1136" rel="apple-touch-startup-image" />
+
+    <link rel="manifest" href="manifest.webmanifest">
+    <title>Conran Pearce</title>
 </head>
-
 <body>
-
-  <header class="header-nobg">
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-    <nav class="menu">
-      <a href="#about-me">About Me</a>
-      <a href="#projects">Projects</a>
-      <a href="#martial-arts">Martial Arts</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
-
-  <section class="full-page" id="landing-img">
-    <h1 id="landing-page">CONRAN PEARCE</h1>
-    <div class="placeholder" id="landing-image" data-large="files/images/background.jpg">
-      <img src="files/images/background-copy.jpg" class="img-small">
-      <div style="padding-bottom: 66.6%;"></div>
-    </div>
-  </section>
-
-  <section class="panels content-container" id="about-me">
-    <h2>About Me</h2>
-    <p>
-      <span>I am studying <strong>
-      <a class="link" href="https://courses.uwe.ac.uk/G400/computer-science/" target='_blank'>Computer Science BSc (Hons)</a>
-      </strong> at the University of the West of England.</span>
-      <span>Within my first and second year of this degree I achieved a 1st.</span>
-      <span>Additionally, I was on the Dean's List for my first and second year.</span>
-    </p>
-    <p>
-      <span>Currently, I am on an industrial placement year at EDF.</span>
-      <span>Working as a Digital Developer within the Digital Innovation team.</span>
-    </p>
-
-    <p class="sub-header">Primary Languages:</p>
-
-    <ul class="programming-list">
-      <li><a>JavaScript</a></li>
-      <li><a>Python</a></li>
-      <li><a>Java</a></li>
-    </ul>
-
-    <p class="sub-header">Experience With:</p>
-
-    <ul class="programming-list">
-      <li><a>HTML5</a></li>
-      <li><a>CSS3</a></li>
-      <li><a>Node.js</a></li>
-      <li><a>C</a></li>
-      <li><a>C#</a></li>
-      <li><a>PHP</a></li>
-      <li><a>Vue.js</a></li>
-      <li><a>CSS Pre-processors</a></li>
-      <li><a>Unity</a></li>
-      <li><a>Git</a></li>
-      <li><a>APIs</a></li>
-    </ul>
-
-    <p class="sub-header">Modules Studied Include:</p>
-
-    <ul class="programming-list">
-      <li><a>Object-Oriented Systems Development</a></li>
-      <li><a>Intro to Artificial Intelligence</a></li>
-      <li><a>IoT</a></li>
-      <li><a>Design and Analysis of Data Structures and Algorithms</a></li>
-      <li><a>Intelligent Systems</a></li>
-    </ul>
-
-    <div class="image-button">
-      <a href='files/Conran_Pearce_CV.pdf' target='_blank'>
-          <img src="files/images/document-cv.png" alt="CV">
-      </a>
-    </div>
-  </section>
-
-  <section class="panels content-container" id="projects">
-    <h2>Projects</h2>
-
-    <p class="sub-header">Block Game:</p>
-
-    <p>This is a simple game I created using Unity and C#.<br>
-      You are able to find this project and the instructions to play on my <a class="link" href="https://github.com/conranpearce/" target='_blank'>GitHub</a>, under <a class="link" href="https://github.com/conranpearce/Unity-Block-Game/" target='_blank'>Unity-Block-Game</a>.<br>
-    </p>
-
-    <div class="video-container" id="game-video" data-aos="fade-up">
-      <div class="video" id="game-parent">
-        <video class="video-file" alt="Block game" loop muted>
-          <source src="files/videos/block-game.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-    <div class="image-button">
-      <a href='http://block-game.netlify.app/' target='_blank'>
-          <img src="files/images/play-button.png" alt="play game">
-      </a>
-    </div>
-  </section>
-
-  <section class="panels content-container" id="martial-arts">
-    <h2>Martial Arts</h2>
-
-    <p>Since a young age, I have taken part in various martial arts.<br>Currently, I mainly train in Kyokushin Karate and Muay Thai.</p>
-
-    <p class="sub-header">Achievements:</p>
+    <div class="parallax">
+        <div class="parallax__group">
+            <div class="parallax__layer--deep">
+                <div class="flex-div">
+                    <h1>conran pearce</h1>
+                    <h2>Software Engineer</h2>
+                </div>
+            </div>
     
-    <p><span>Black Belt in Tae Kwon Do</span>
-      <span>Brown Belt in Kyokushin Karate</span>
-      <span>Represented Great Britain at the World Tournament in Greece</span>
-      <span>Placed 1st and 2nd in many tournaments abroad and in England</span>
-    </p>
+            <div id="scroll-arrow"></div>
 
-    <div class="video-container" id="karate-video" data-aos="fade-up">
-      <div class="video" id="karate-parent">
-          <video class="video-file" alt="Karate knockout" loop muted>
-            <source src="files/videos/karate.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-          </video>
-      </div>
+            <div class="parallax__layer parallax__layer--base">
+                <h3>contact me</h3>
+                <div class="box">
+                    <form method="POST" action="https://formspree.io/mrgyeqkp">
+                        <input type="email" name="email" class="email" placeholder="Your email">
+                        <textarea name="message"  class="message" placeholder="Your message" style="font-family:'Ubuntu'"></textarea>
+                        <button type="submit" class="button" value="send">Send</button>
+                    </form>
+                </div>
+                <p id="footer">Built by <b>Conran Pearce</b></p>
+            </div>
+        </div>
     </div>
-
-    <div class="image-button">
-      <a href='https://www.instagram.com/p/BxVF3HPHv0G/' target='_blank'>
-          <img src="files/images/instagram.png" alt="instagram link">
-      </a>
-    </div>
-  </section>
-
-  <section class="panels content-container" id="contact">
-    <h2>Contact</h2>
-    <div id="contact-text">
-      <p><strong>Email: </strong>conranpearce@hotmail.com</p>
-      <p><strong>Phone: </strong>+44 771864140</p>
-    </div>
-
-    <div id="contact-social" >
-      <a class="social-link" href='https://www.linkedin.com/in/conran-pearce/' target='_blank'>
-        <img class="link-size" src="files/images/linkedin.png" alt="linkedin">
-      </a>
-      <a class="social-link" href='https://www.github.com/conranpearce/' target='_blank'>
-        <img class="link-size" src="files/images/github.png" alt="github">
-      </a>
-    </div>
-  </section>
-
-  <footer>Built by <b>Conran Pearce</b></footer>
-
-  <script src="js/main.js" type="text/javascript"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      duration: 750,
-    });
-  </script>
-  </body>
+</body>
 </html>
